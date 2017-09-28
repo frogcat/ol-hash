@@ -3,6 +3,13 @@ Simple OpenLayers plugin to save map view state in URL hash
 
 # usage
 
+1. import <https://frogcat.github.io/ol-hash/ol-hash.js>
+2. call `ol.hash(map)`
+
+# example
+
+Live demo is available here <https://frogcat.github.io/ol-hash/> .
+
 ```html
 <!doctype html>
 <html lang="en">
@@ -15,8 +22,6 @@ Simple OpenLayers plugin to save map view state in URL hash
       }
     </style>
     <script src="https://openlayers.org/en/v4.3.4/build/ol.js" type="text/javascript"></script>
-
-    <!-- Step2. import ol-hash.js -->
     <script src="ol-hash.js"></script>
     <title>OpenLayers example</title>
   </head>
@@ -36,7 +41,6 @@ Simple OpenLayers plugin to save map view state in URL hash
           zoom: 4
         })
       });
-      // Step2: call ol.hash(map)
       ol.hash(map);
     </script>
   </body>

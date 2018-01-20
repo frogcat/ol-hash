@@ -1,5 +1,5 @@
 (function(ol) {
-  if (!ol && ol.hash) return;
+  if (!ol || ol.hash) return;
 
   var encode = function(view) {
     var c = ol.proj.toLonLat(view.getCenter());
